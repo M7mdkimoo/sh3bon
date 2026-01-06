@@ -12,7 +12,7 @@ const blends = [
     prices: [
       { weight: '125جم', plain: 80, spiced: 85 },
       { weight: '250جم', plain: 150, spiced: 160 },
-      { weight: '500جم', plain: 305, spiced: 320 },
+      { weight: '500جم', plain: 300, spiced: 320 },
     ],
     accent: '#D4AF37', // Unified Gold
     textColor: 'black',
