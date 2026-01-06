@@ -1,0 +1,94 @@
+
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.ico" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    
+    <title>بن شعبن | كلها بتقول! ☕ خلطات احترافية ومزاج عالي</title>
+    <meta name="description" content="بنّ شعبن — حيث المزاج الرايق والطعم الأصيل. خلطات احترافية (شع بن، مشروع مزاج، ليفل الوحش) محمصة بعناية. اطلب الآن واستفد بخصم الافتتاح 10%." />
+
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700;900&display=swap" rel="stylesheet">
+    <style>
+      :root {
+        --gold: #D4AF37;
+        --silver: #C0C0C0;
+        --matte-black: #0a0a0a;
+        --soft-beige: #F5F5DC;
+      }
+      body {
+        font-family: 'Cairo', sans-serif;
+        background-color: var(--matte-black);
+        color: var(--soft-beige);
+        scroll-behavior: smooth;
+      }
+      .text-gold { color: var(--gold); }
+      .bg-gold { background-color: var(--gold); }
+      .border-gold { border-color: var(--gold); }
+      
+      .text-shadow-gold {
+        text-shadow: 0 0 10px rgba(212, 175, 55, 0.5);
+      }
+
+      .luxury-card {
+        background: linear-gradient(145deg, #151515, #0a0a0a);
+        border: 1px solid rgba(255, 255, 255, 0.05);
+        transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+      }
+      .luxury-card:hover {
+        transform: translateY(-10px);
+        border-color: var(--gold);
+        box-shadow: 0 20px 40px rgba(0,0,0,0.6);
+      }
+
+      @keyframes slide-banner {
+        0% { transform: translateY(-100%); }
+        100% { transform: translateY(0); }
+      }
+      .animate-slide-banner {
+        animation: slide-banner 0.5s ease-out forwards;
+      }
+
+      /* Custom scrollbar */
+      ::-webkit-scrollbar {
+        width: 8px;
+      }
+      ::-webkit-scrollbar-track {
+        background: #0a0a0a;
+      }
+      ::-webkit-scrollbar-thumb {
+        background: var(--gold);
+        border-radius: 4px;
+      }
+
+      .animate-steam {
+        animation: steam 10s linear infinite;
+        opacity: 0;
+      }
+      @keyframes steam {
+        0% { transform: translateY(20px) scale(0.95); opacity: 0; }
+        20% { opacity: 0.2; }
+        80% { opacity: 0.2; }
+        100% { transform: translateY(-100px) scale(1.1); opacity: 0; }
+      }
+    </style>
+  <script type="importmap">
+{
+  "imports": {
+    "react/": "https://aistudiocdn.com/react@^19.2.0/",
+    "react": "https://aistudiocdn.com/react@^19.2.0",
+    "react-dom/": "https://aistudiocdn.com/react-dom@^19.2.0/"
+  }
+}
+</script>
+<link rel="stylesheet" href="/index.css">
+</head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/index.tsx"></script>
+  </body>
+</html>
